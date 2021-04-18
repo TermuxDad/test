@@ -7,7 +7,7 @@ __help__ = """
 3 Start A Voice Chat And Give Commands
 
 *COMMAND*
- /saavn To search song on jio saavan and play the first result 
+ /savn To search song on jio saavan and play the first result 
  /deezer To search the song on deezer and get good quality stream 
  /ytt To search the song on Youtube and play the first matching result 
  /play Reply this in response to a link or any telegram audio file it will be played 
