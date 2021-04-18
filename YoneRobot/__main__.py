@@ -90,7 +90,7 @@ buttons = [
             text="Support 🔧", url="t.me/Innexiasupport"
         ),
         InlineKeyboardButton(
-            text="Updates 📢", url="t.me/InnexiaUpdates"
+            text="Search 🔎", switch_inline_query_current_chat=""
         ),
     ],
 
