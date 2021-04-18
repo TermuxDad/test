@@ -13,7 +13,7 @@ __help__ = """
  /play Reply this in response to a link or any telegram audio file it will be played 
  
  *MORE TOOLS*
- /skip to skip current song 
+ /skip or /next to skip current song 
  /stop or /end to stop the streaming of song 
  /pause to pause the stream 
  /resume to resume the playback. 
