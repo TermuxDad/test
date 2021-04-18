@@ -16,7 +16,7 @@ import wget
 from bs4 import BeautifulSoup
 from pyrogram import filters
 
-from YoneRobot.pyrogramee.pluginhelpers import admins_only, progress
+from YoneRobot.pyrogramee.pluginhelper import admins_only, progress
 from YoneRobot.services.pyrogram import pbot
 
 
