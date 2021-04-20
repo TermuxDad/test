@@ -74,6 +74,12 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
+STICKERS = (
+    "CAACAgUAAxkBAAJEgGB-Y3DnFp5kPMCz3SXHSeAXVHs1AAIyAgACUw15V550ksygH_GbHwQ"'
+    "CAACAgUAAxkBAAJEgGB-Y3DnFp5kPMCz3SXHSeAXVHs1AAIyAgACUw15V550ksygH_GbHwQ"'
+)
+    
+    
 PM_START_TEXT = """
 `Heya` 🤗 `I am` *INNEXIA* `your group super bot`
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
