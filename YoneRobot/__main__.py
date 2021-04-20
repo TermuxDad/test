@@ -185,12 +185,7 @@ def test(update: Update, context: CallbackContext):
     # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
-
-
-@register(cmds="start", no_args=True, only_pm=True)
-async def start_cmd(message):
-    await message.reply_sticker(random.choice(STICKERS))
-    await get_start_func(message)
+    
 
 @run_async
 def start(update: Update, context: CallbackContext):
