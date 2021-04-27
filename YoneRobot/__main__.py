@@ -100,7 +100,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` *INNEXIA* `your group super bot`
+Hi {}!
+@InnexiaBot your *Group* super bot
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
 """
 
