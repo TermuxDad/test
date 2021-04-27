@@ -121,6 +121,15 @@ buttons = [
 
     [
         InlineKeyboardButton(
+            text="ask", url="t.me/selfisxd"
+        ),
+        InlineKeyboardButton(
+            text=sr", url="t.me/anything"
+        ),
+   ],
+    
+   [
+        InlineKeyboardButton(
             text="Add To Group 👥", url="t.me/Innexiabot?startgroup=true"
         ),
     ],
