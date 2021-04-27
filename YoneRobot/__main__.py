@@ -74,10 +74,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-STICKERS = (
-    "CAACAgUAAxkBAAJEgGB-Y3DnFp5kPMCz3SXHSeAXVHs1AAIyAgACUw15V550ksygH_GbHwQ"
-    "CAACAgUAAxkBAAJEgGB-Y3DnFp5kPMCz3SXHSeAXVHs1AAIyAgACUw15V550ksygH_GbHwQ"
-)
+await message.reply_sticker("CAACAgUAAxkBAAKkS2CH9nYLBGXzMWlXRHMtlOXX_AsTAAL7AQACHeeIV_6UL3tHOZMUHwQ")
     
     
 PM_START_TEXT = """
