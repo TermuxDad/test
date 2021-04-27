@@ -126,9 +126,9 @@ buttons = [
         InlineKeyboardButton(
             text="🔎 Search", switch_inline_query_current_chat=""
         ),
-   ],
+    ],
     
-   [
+    [
         InlineKeyboardButton(
             text="➕ Add Me To A Group ➕", url="t.me/Innexiabot?startgroup=true"
         ),
