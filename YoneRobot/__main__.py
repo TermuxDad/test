@@ -3,7 +3,7 @@ import time
 import re
 from sys import argv
 from typing import Optional
-
+import random
 
 from YoneRobot import (
     ALLOW_EXCL,
