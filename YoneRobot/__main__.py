@@ -98,9 +98,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-await message.reply_sticker("CAACAgUAAxkBAAKkS2CH9nYLBGXzMWlXRHMtlOXX_AsTAAL7AQACHeeIV_6UL3tHOZMUHwQ")
-    
-    
+
 PM_START_TEXT = """
 `Heya` 🤗 `I am` *INNEXIA* `your group super bot`
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
