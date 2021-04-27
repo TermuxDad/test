@@ -106,31 +106,31 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="Help & Commands ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="❔ Help & Commands ❔", callback_data="help_back"),
         
     ],
 
     [
         InlineKeyboardButton(
-            text="Support 🔧", url="t.me/Innexiasupport"
+            text="👥 Group", url="t.me/Innexiasupport"
         ),
         InlineKeyboardButton(
-            text="Search 🔎", switch_inline_query_current_chat=""
+            text="Channel 📢", url="t.me/InnexiaUpdates"
         ),
     ],
 
     [
         InlineKeyboardButton(
-            text="ask", url="t.me/selfisxd"
+            text="Information 💬", callback_data="yone_"),
         ),
         InlineKeyboardButton(
-            text="sr", url="t.me/anything"
+            text="🔎 Search", switch_inline_query_current_chat=""
         ),
    ],
     
    [
         InlineKeyboardButton(
-            text="Add To Group 👥", url="t.me/Innexiabot?startgroup=true"
+            text="➕ Add Me To A Group ➕", url="t.me/Innexiabot?startgroup=true"
         ),
     ],
 ]
@@ -394,16 +394,15 @@ def yone_about_callback(update, context):
     query = update.callback_query
     if query.data == "yone_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *yone*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_yone's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/noob-kittu/YoneRobot).
-                 \n\nIf you have any question about yone, let us know at .""",
+            text="""*INNEXIA* it's online since 29 March 2021 and it's constantly updated!
+                  \n*Bot Admins*
+                  \n• @SelfisXD, bot creator and main developer
+                  \n• The Doctor, server manager and developer
+                  \n• Manuel 5, developer
+                  \n*Supporter*
+                  \n[Click here](t.me/INSupporters) to consult the updated list of Official Supporters of the bot.
+                  \n• Thanks to all our *donors* for supporting server and development expenses and all those who have reported bugs or suggested new features.
+                  \n• We also thank *all the groups* who rely on our Bot for this service, we hope you will always like it: we are constantly working to improve it!""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
