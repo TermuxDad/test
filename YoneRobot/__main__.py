@@ -239,6 +239,7 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            chat_id = update.effective_chat.id
             temp = (random.choice(PMSTICKER))
             context.bot.send_sticker(chat_id, sticker=temp) #message.bot.send_sticker(chat.id,
             update.effective_message.reply_text(
