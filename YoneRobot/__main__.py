@@ -105,7 +105,7 @@ PM_START_TEXT = """
 """
 
 buttons = [
-    (
+    [
         InlineKeyboardButton(text="❔ Help & Commands ❔", callback_data="help_back"),
         
     ],
