@@ -121,7 +121,7 @@ buttons = [
 
     [
         InlineKeyboardButton(
-            text="Information 💬", callback_data="yone_"),
+            text="Information 💬", callback_data="yone_"
         ),
         InlineKeyboardButton(
             text="🔎 Search", switch_inline_query_current_chat=""
