@@ -124,7 +124,7 @@ buttons = [
             text="ask", url="t.me/selfisxd"
         ),
         InlineKeyboardButton(
-            text=sr", url="t.me/anything"
+            text="sr", url="t.me/anything"
         ),
    ],
     
