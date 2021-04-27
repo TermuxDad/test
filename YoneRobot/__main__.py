@@ -48,6 +48,30 @@ from telegram.ext import (
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
+PMSTICKER = (
+    "CAACAgUAAx0CUg8vTgACB7tgcFxdQdBRT31liVCdyjEtHYv4jAACmwEAAgkoiVcvcpJLqZntIh4E",
+    "CAACAgUAAx0CUg8vTgACB7pgcFxX3vdP51uRelaWPTaXuqcpxQACQAcAAoKseVcHYeawlmWvnB4E",
+    "CAACAgUAAx0CUg8vTgACB7hgcFxKXFLZ284wzEvDL9dwQ_meOAACTwIAApikgFf5-oSv_YQKSx4E",
+    "CAACAgUAAx0CUg8vTgACB7dgcFxEIWI0fifJkNv31nAxnX1wuQACBAMAAt-BgFcTrzjWiAKkmR4E",
+    "CAACAgUAAx0CUg8vTgACB7ZgcFxACy9zAkFHFrosn5BCrsS-bAACmQEAAoUVgFeFCMfdgp5cZR4E",
+    "CAACAgUAAx0CUg8vTgACB7VgcFw6ysxUmyU2BH_ntbfm5BWCLQAClQIAAjObgVfRH1vLpxLA7h4E",
+    "CAACAgUAAx0CUg8vTgACB7RgcFw0ywAB0BoZ9VbL0yLXDq--OFoAAjQCAAKHnIFX4Zn36f5U7-MeBA",
+    "CAACAgUAAx0CUg8vTgACB7NgcFwtCwcvxLDKjfYpqdcyEP1z9QAC3wEAAmOLgFd5a4AAATm0TZQeBA",
+    "CAACAgUAAx0CUg8vTgACB7JgcFwmrwdnd--fvTbpBWNTmkHxewACjwEAAklgiFfuKUY41tIg4R4E",
+    "CAACAgUAAx0CUg8vTgACB7FgcFwfh1YJaUMngm2C1W5S91efRAACOwIAAsnDgVeLgOnjl6XUKh4E",
+    "CAACAgUAAx0CUg8vTgACB7BgcFwZdfyKtyXf0_4UBcsYPRn57wACuQEAAvbyiFcH3UXUREHtPh4E",
+    "CAACAgUAAx0CUg8vTgACB69gcFwQSD-mDqJCJEAm9--S7o19wQACRwMAAkOwiFftE8BncwWXax4E",
+    "CAACAgUAAx0CUg8vTgACB65gcFwL3dsSYp4lfY3Ux4MV_shsLgACJgIAAnZ7iFcBHt-vLHUcPB4E",
+    "CAACAgUAAx0CUg8vTgACB61gcFwGTXv3_SSpzopj4Zbkj1UbfAAC-wEAAh3niFf-lC97RzmTFB4E",
+    "CAACAgUAAx0CUg8vTgACB6tgcFwAATva875BFsNt5XDuj4mBirgAAuQBAAKDvHBXnVxT9y9HXekeBA",
+    "CAACAgUAAx0CUg8vTgACB6pgcFv5oJR7IO_4EuI_Mwcd1ci3EgACAwIAAsi_eVd-2vOORe7abh4E",
+    "CAACAgUAAx0CUg8vTgACB6lgcFvzBXqAV-bYRWI_ah-gghV8CQACMgIAAlMNeVeedJLMoB_xmx4E",
+    "CAACAgUAAxkBAAIIIGBwrr0qOED2DM67hmhUAQsgUHH5AALlAgAC-lWBVyoPto-smrNtHgQ",
+    "CAACAgUAAx0CUg8vTgACExpgf8JyNA7dwKOfo-0JO3cKbI_OiwACkQIAAtrKqVf9QV362ZEdRx8E",
+    "CAACAgUAAx0CUg8vTgACExtgf8J2mkcfngnZYXixRdBLDQg33gACpAEAAkTQyFdvHNLzM5185B8E",
+    "CAACAgUAAx0CUg8vTgACExxgf8J6_PbnCalkH-xMNZQyCMbaBwACEQIAAnySyFexxpDK2JGB7B8E",
+    "CAACAgUAAx0CUg8vTgACEx1gf8J9i_6fIXxHviAfl4nXt_mS1gACBwMAAmNMyFfDXfqJTIi-4x8E",
+)
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -217,6 +241,8 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            temp = (random.choice(PMSTICKER))
+            context.bot.send_sticker(chat_id, sticker=temp) #message.bot.send_sticker(chat.id,
             update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
